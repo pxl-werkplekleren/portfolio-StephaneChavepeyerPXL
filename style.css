@@ -15,7 +15,7 @@ nav {
     background: #0d1b36;
     height: 100vh;
     position: fixed;
-    padding-top: 20px;
+    padding-top: 56px;
 }
 
 nav ul {
@@ -39,7 +39,9 @@ header {
     text-align: center;
     padding: 20px;
     background: white;
-    margin-left: 200px;
+    margin: 20px 20px 0 220px;
+    border: 1px solid #ccd1d9;
+    position: relative;
 }
 
 main {
@@ -84,6 +86,10 @@ table {
     margin: 20px 0;
 }
 
+.icons {
+    background-color: #f0f2f5;
+}
+
 table, td, th {
     border: 1px solid #ccd1d9;
 }
@@ -121,4 +127,70 @@ footer a {
 
 footer a:hover {
     text-decoration: underline;
+}
+
+.dark-button {
+    position: absolute;
+    top: 12px;
+    right: 14px;
+    z-index: 10;
+    background: transparent;
+    border: none;
+    color: #d8dce6;
+    font-size: 28px;
+    line-height: 1;
+    padding: 0;
+    cursor: pointer;
+}
+
+body.dark {
+    background: #121212;
+    color: #eaeaea;
+}
+
+body.dark header,
+body.dark section {
+    background: #1f1f1f;
+    border-color: #3a3a3a;
+}
+
+body.dark nav {
+    background: #0a0a0a;
+}
+
+body.dark nav a {
+    color: #eaeaea;
+}
+
+body.dark nav a:hover {
+    background: #2a2a2a;
+}
+
+body.dark h1,
+body.dark h2,
+body.dark h3,
+body.dark strong {
+    color: #9ecbff;
+}
+
+body.dark th {
+    background: #2b2b2b;
+}
+
+body.dark table,
+body.dark td,
+body.dark th {
+    border-color: #3a3a3a;
+}
+
+body.dark .icons {
+    background: #1f1f1f;
+}
+
+body.dark footer {
+    background: #0a0a0a;
+}
+
+body.dark .dark-button {
+    color: #9ecbff;
 }
