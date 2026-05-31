@@ -1,4 +1,4 @@
-* {
+﻿* {
     box-sizing: border-box;
 }
 
@@ -7,12 +7,13 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background: #f0f2f5;
+    background: #f3f6fb;
+    color: #1f2937;
 }
 
 nav {
     width: 200px;
-    background: #0d1b36;
+    background: #0b1428;
     height: 100vh;
     position: fixed;
     padding-top: 56px;
@@ -26,21 +27,22 @@ nav ul {
 
 nav a {
     display: block;
-    color: #d8dce6;
+    color: #dbe4f0;
     text-decoration: none;
     padding: 12px 20px;
 }
 
 nav a:hover {
-    background: #1a2b4a;
+    background: #22314a;
 }
 
 header {
     text-align: center;
     padding: 20px;
-    background: white;
+    background: #ffffff;
     margin: 20px 20px 0 220px;
-    border: 1px solid #ccd1d9;
+    border: 1px solid #dbe4ef;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
     position: relative;
 }
 
@@ -50,10 +52,11 @@ main {
 }
 
 section {
-    background: white;
+    background: #ffffff;
     padding: 20px;
     margin-bottom: 30px;
-    border: 1px solid #ccd1d9;
+    border: 1px solid #dbe4ef;
+    box-shadow: 0 2px 8px rgba(15, 23, 42, 0.04);
 }
 
 h2, h3, h4 {
@@ -65,18 +68,32 @@ h1 {
 }
 
 header h1 {
-    color: #1a2b4a;
+    color: #1e3a8a;
+    margin: 0;
+    letter-spacing: 0.5px;
+}
+
+.header-subtitle {
+    margin: 8px 0 0;
+    font-size: 1rem;
+    color: #334155;
+}
+
+.header-meta {
+    margin: 6px 0 0;
+    font-size: 0.9rem;
+    color: #64748b;
 }
 
 h2 {
-    color: #1a2b4a;
-    border-bottom: 2px solid #3a5d9c;
+    color: #1e3a8a;
+    border-bottom: 2px solid #4b8df7;
     padding-bottom: 10px;
     margin-bottom: 20px;
 }
 
 h3 {
-    color: #2a3b5a;
+    color: #334155;
     margin-top: 25px;
 }
 
@@ -87,11 +104,11 @@ table {
 }
 
 .icons {
-    background-color: #f0f2f5;
+    background-color: #f3f6fb;
 }
 
 table, td, th {
-    border: 1px solid #ccd1d9;
+    border: 1px solid #dbe4ef;
 }
 
 td, th {
@@ -100,7 +117,7 @@ td, th {
 }
 
 th {
-    background-color: #e8ebf0;
+    background-color: #f1f5fb;
 }
 
 ul {
@@ -109,19 +126,19 @@ ul {
 }
 
 strong {
-    color: #1a2b4a;
+    color: #1e3a8a;
 }
 
 footer {
-    background: #0d1b36;
-    color: white;
+    background: #0b1428;
+    color: #e5e7eb;
     text-align: center;
     padding: 15px;
     margin-left: 200px;
 }
 
 footer a {
-    color: #d8dce6;
+    color: #dbe4f0;
     text-decoration: none;
 }
 
@@ -136,7 +153,7 @@ footer a:hover {
     z-index: 10;
     background: transparent;
     border: none;
-    color: #d8dce6;
+    color: #dbe4f0;
     font-size: 28px;
     line-height: 1;
     padding: 0;
@@ -144,53 +161,94 @@ footer a:hover {
 }
 
 body.dark {
-    background: #121212;
-    color: #eaeaea;
+    background: #0a1120;
+    color: #e5e7eb;
 }
 
 body.dark header,
 body.dark section {
-    background: #1f1f1f;
-    border-color: #3a3a3a;
+    background: #0f172a;
+    border-color: #2f3d54;
+    box-shadow: 0 2px 8px rgba(2, 6, 23, 0.3);
 }
 
 body.dark nav {
-    background: #0a0a0a;
+    background: #020617;
 }
 
-body.dark nav a {
-    color: #eaeaea;
+body.dark nav a,
+body.dark .menu-group summary,
+body.dark .dark-button {
+    color: #e5e7eb;
 }
 
-body.dark nav a:hover {
-    background: #2a2a2a;
+body.dark nav a:hover,
+body.dark .menu-group summary:hover {
+    background: #1c2a42;
 }
 
 body.dark h1,
 body.dark h2,
 body.dark h3,
 body.dark strong {
-    color: #9ecbff;
+    color: #93c5fd;
 }
 
-body.dark th {
-    background: #2b2b2b;
+body.dark h3 {
+    color: #c6d7ee;
+}
+
+body.dark .header-subtitle {
+    color: #d6e2f2;
+}
+
+body.dark .header-meta {
+    color: #9fb4cf;
+}
+
+body.dark h2 {
+    border-bottom-color: #6aa7f7;
 }
 
 body.dark table,
 body.dark td,
 body.dark th {
-    border-color: #3a3a3a;
+    border-color: #2f3d54;
+}
+
+body.dark th {
+    background: #162134;
 }
 
 body.dark .icons {
-    background: #1f1f1f;
+    background: #0f172a;
 }
 
 body.dark footer {
-    background: #0a0a0a;
+    background: #020617;
 }
 
-body.dark .dark-button {
-    color: #9ecbff;
+body.dark footer a {
+    color: #e5e7eb;
+}
+
+.menu-group summary {
+    color: #dbe4f0;
+    padding: 12px 20px;
+    cursor: pointer;
+    user-select: none;
+}
+
+.menu-group summary:hover {
+    background: #22314a;
+}
+
+.submenu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.submenu a {
+    padding-left: 34px;
 }

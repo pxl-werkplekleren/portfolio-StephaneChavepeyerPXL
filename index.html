@@ -12,19 +12,40 @@
     <button id="darkmodeButton" class="dark-button" aria-label="Dark mode">&#127769;</button>
     <ul>
         <li><a href="#introductie">Introductie</a></li>
-        <li><a href="#logboek">Logboek</a></li>
-        <li><a href="#ontwikkeling">Ontwikkeling</a></li>
-        <li><a href="#competenties">Competenties</a></li>
-        <li><a href="#situering">Situering</a></li>
-        <li><a href="#voorbeeldenactiviteiten">Activiteiten</a></li>
-        <li><a href="#pe-opdrachten">Opdrachten</a></li>
-        <li><a href="#aimreflectie">Reflectie</a></li>
-        <li><a href="#kernkwadranten">Kernkwadranten</a></li>
-        <li><a href="#x-factor">X-factor</a></li>
+
+        <li class="menu-group">
+            <details>
+                <summary>WPL1</summary>
+                <ul class="submenu">
+                    <li><a href="#logboek">Logboek</a></li>
+                    <li><a href="#ontwikkeling">Ontwikkeling</a></li>
+                    <li><a href="#competenties">Competenties</a></li>
+                    <li><a href="#situering">Situering</a></li>
+                    <li><a href="#voorbeeldenactiviteiten">Activiteiten</a></li>
+                    <li><a href="#pe-opdrachten">Opdrachten</a></li>
+                    <li><a href="#aimreflectie">Reflectie</a></li>
+                    <li><a href="#kernkwadranten">Kernkwadranten</a></li>
+                    <li><a href="#x-factor">X-factor</a></li>
+                </ul>
+            </details>
+        </li>
+
+        <li class="menu-group">
+            <details>
+                <summary>WPL2</summary>
+                <ul class="submenu">
+                    <li><a href="#wpl2-case">Casebeschrijving</a></li>
+                    <li><a href="#wpl2-aandeel">Mijn aandeel</a></li>
+                    <li><a href="#wpl2-reflectie">Eindreflectie (PDF)</a></li>
+                </ul>
+            </details>
+        </li>
     </ul>
 </nav>
 <header>
-    <h1>Portfolio<br>Stephane Chavepeyer</h1>
+    <h1>Portfolio</h1>
+    <p class="header-subtitle">Stephane Chavepeyer - Graduaat Programmeren (PXL)</p>
+    <p class="header-meta">WPL1 + WPL2 overzicht</p>
 </header>
 <main>
     <section id="introductie" class="introductie">
@@ -653,6 +674,28 @@
             </tr>
             </tbody>
         </table>
+    </section>
+    <section id="wpl2-case">
+        <h2>WPL2 - Casebeschrijving</h2>
+        <p>Tijdens WPL2 heb ik samen met mijn projectgroep gewerkt aan een project voor de Red Bull Gaming Hub (RGBH). Het doel van dit project was om een oplossing te ontwikkelen die zowel bezoekers als medewerkers van de gaming hub ondersteunt. Terwijl DVO zich voornamelijk bezighield met de klantenwebsite, lag de focus van ons programmeerteam op het ontwikkelen van een beheerdashboard voor medewerkers en administrators.</p>
+        <p>Via dit dashboard kunnen medewerkers evenementen aanmaken en beheren, producten beheren en verschillende gegevens raadplegen. Daarnaast hebben we ook gewerkt aan functionaliteiten rond gebruikersbeheer, zoals aanmelden, toegangsrechten en bijvoorbeeld het resetten van een wachtwoord via e-mail.</p>
+        <p>Één van de belangrijkste onderdelen van het project was het automatisch tonen van de open- of geslotenstatus van de RBGH. Vroeger werd deze informatie voornamelijk via Discord gedeeld, wat soms voor verwarring zorgde. Daarom hebben we een systeem ontwikkeld waarbij een medewerker of administrator zich kan inchecken. Deze informatie wordt opgeslagen in de databank en zorgt ervoor dat bezoekers op de klantenwebsite onmiddellijk kunnen zien of de gaming hub geopend of gesloten is.</p>
+        <p>Tijdens dit project hebben we gewerkt met verschillende technologieën zoals HTML, CSS, JavaScript, C#, SQL en API's. Door de samenwerking tussen de verschillende teamleden hebben we een werkende toepassing ontwikkeld die aansluit bij de wensen van de opdrachtgever en die een aantal dagelijkse processen binnen de Red Bull Gaming Hub vereenvoudigt.</p>
+    </section>
+
+    <section id="wpl2-aandeel">
+        <h2>WPL2 - Mijn aandeel</h2>
+        <p>Binnen het project heb ik vooral gewerkt aan onderdelen van de back-end. Ik heb meegeholpen met het opzetten van de databankstructuur en de relaties tussen de verschillende tabellen. Deze structuur vormde de basis voor de REST API en de functionaliteiten binnen het dashboard.</p>
+        <p>Daarnaast heb ik gewerkt aan gebruikersbeheer. Zo heb ik meegeholpen aan de registratie- en loginfunctionaliteiten, het wijzigen van wachtwoorden en het veilig opslaan van wachtwoorden via hashing. Ook heb ik meegewerkt aan het versturen van e-mails, bijvoorbeeld wanneer een gebruiker een wachtwoordreset aanvraagt of wanneer een bestelling succesvol geplaatst werd.</p>
+        <p>Een ander onderdeel waar ik aan heb meegewerkt was het dashboard voor medewerkers. Hier lag de focus op een duidelijke homepagina en het beheren van gebruikers. Ook heb ik geholpen bij de functionaliteit waarmee gebruikers producten kunnen bestellen via de klantenwebsite en automatisch een bevestigingsmail ontvangen bij het plaatsen van een succesvolle bestelling.</p>
+        <p>Naast mijn technische taken hielp ik ook regelmatig bij het testen van de applicatie. Tegen het einde van elke sprint controleerde ik zowel nieuwe als bestaande functionaliteiten op fouten, bugs en mogelijke verbeteringen. Hierbij testte ik voornamelijk de front-end om na te gaan of alles correct werkte voor de eindgebruiker. Eventuele problemen of verbeterpunten werden vervolgens besproken en opgeslagen binnen het team zodat deze nog voor het einde van elke sprint konden worden aangepakt.</p>
+        <p>Tijdens sprint 2 nam ik bovendien de rol van Scrum Master op mij. Hierbij was ik verantwoordelijk voor het opvolgen van de sprintplanning, het organiseren van de daily standups, het bewaken van de voortgang en het elimineren van eventuele obstakels van het team. Hierdoor kreeg ik niet alleen meer inzicht in hoe Scrum in de praktijk wordt toegepast, maar leerde ik ook beter communiceren en samenwerken binnen een projectgroep.</p>
+        <p>Tijdens dit project heb ik veel gewerkt met C#, SQL, API's, HTML, CSS en JavaScript. Vooral het koppelen van de databank aan de back-end en het werken met API's vond ik interessant omdat ik hierdoor beter ben gaan begrijpen hoe verschillende onderdelen van een volledige applicatie met elkaar samenwerken.</p>
+    </section>
+
+    <section id="wpl2-reflectie">
+        <h2>WPL2 - Eind reflectie (PDF)</h2>
+        <p><a href="documents/eindreflectie-wpl2.pdf" target="_blank">Open mijn individuele eindreflectie (PDF)</a></p>
     </section>
 </main>
 <footer>
